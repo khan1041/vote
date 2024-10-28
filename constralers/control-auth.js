@@ -17,7 +17,7 @@ const router = require('../router/auth-router')
 const cheakadminrole=async(userID)=>{
     try {
         const user=await User.findById(userID);
-         if(user.role==="admin")
+         if(user.role==="voted")
           return true
 
     } catch (error) {
